@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "341515312690",
+    "project_id": "smartfarmloop",
+    "storage_bucket": "smartfarmloop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:341515312690:android:b7ef014b9c1e646113262b",
+        "android_client_info": {
+          "package_name": "com.farmhouse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "341515312690-nihct53qqqtr36t4kn0mdem1amfoclk1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUPNSRqMvPV7LvAL8C2DhBUfxWigu-cac"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "341515312690-nihct53qqqtr36t4kn0mdem1amfoclk1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
