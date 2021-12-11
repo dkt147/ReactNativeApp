@@ -28,6 +28,10 @@ import BottomNav from './lib/Navigation/BottomNav';
 import SignUp from './lib/packages/SignUp';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import AdminBottomNav from './lib/Navigation/AdminBottomNav';
+import UserInfo from './lib/Component/UserInfo'
+import farmOwnerInfo from './lib/Component/farmOwnerInfo'
+import CateringInfo from './lib/Component/CateringInfo'
+import TranspoterInfo from './lib/Component/TranspoterInfo'
 const MyStack = () => {
   const Stack = createNativeStackNavigator();
   return (
@@ -38,8 +42,12 @@ const MyStack = () => {
         headerShown: false
       }}
       >
-      <Stack.Screen name="AdminBottomNav" component={AdminBottomNav} />
+      {/* <Stack.Screen name="AdminBottomNav" component={AdminBottomNav} /> */}
       <Stack.Screen name="BottomNav" component={BottomNav} />
+      <Stack.Screen name="UserInfo" component={UserInfo} />
+      <Stack.Screen name="FarmOwnerInfo" component={farmOwnerInfo} />
+      <Stack.Screen name="CateringInfo" component={CateringInfo} />
+      <Stack.Screen name="TranspoterInfo" component={TranspoterInfo} />
     </Stack.Navigator>
   )
 }
