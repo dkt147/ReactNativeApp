@@ -1,19 +1,5 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
 import React from 'react';
 import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
   View,
   ActivityIndicator
 } from 'react-native';
@@ -27,11 +13,11 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import BottomNav from './lib/Navigation/BottomNav';
 import SignUp from './lib/packages/SignUp';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import AdminBottomNav from './lib/Navigation/AdminBottomNav';
 import UserInfo from './lib/Component/UserInfo'
 import farmOwnerInfo from './lib/Component/farmOwnerInfo'
 import CateringInfo from './lib/Component/CateringInfo'
 import TranspoterInfo from './lib/Component/TranspoterInfo'
+import AllPackages from './lib/Component/AllPackages';
 const MyStack = () => {
   const Stack = createNativeStackNavigator();
   return (
@@ -48,6 +34,7 @@ const MyStack = () => {
       <Stack.Screen name="FarmOwnerInfo" component={farmOwnerInfo} />
       <Stack.Screen name="CateringInfo" component={CateringInfo} />
       <Stack.Screen name="TranspoterInfo" component={TranspoterInfo} />
+      <Stack.Screen name="AllPackages" component={AllPackages} />
     </Stack.Navigator>
   )
 }
