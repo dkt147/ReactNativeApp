@@ -2,7 +2,7 @@
   "project_info": {
     "project_number": "341515312690",
     "project_id": "smartfarmloop",
-    "storage_bucket": "smartfarmloop.appspot.com"
+    "storage_bucket": "gs://smartfarmloop.appspot.com"
   },
   "client": [
     {
