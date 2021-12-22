@@ -18,6 +18,12 @@ import farmOwnerInfo from './lib/Component/farmOwnerInfo'
 import CateringInfo from './lib/Component/CateringInfo'
 import TranspoterInfo from './lib/Component/TranspoterInfo'
 import AllPackages from './lib/Component/AllPackages';
+import ConfirmOrder from './lib/Component/ConfirmOrder';
+import TransportBooking from './lib/Component/TransportBooking';
+import Order from './lib/Component/Order';
+import ProductPage from './lib/packages/ProductPage/ProductPage';
+import Booking from './lib/packages/ProductPage/Booking';
+import CartingBooking from './lib/Component/CartingBooking';
 const MyStack = () => {
   const Stack = createNativeStackNavigator();
   return (
@@ -35,6 +41,12 @@ const MyStack = () => {
       <Stack.Screen name="CateringInfo" component={CateringInfo} />
       <Stack.Screen name="TranspoterInfo" component={TranspoterInfo} />
       <Stack.Screen name="AllPackages" component={AllPackages} />
+      <Stack.Screen name="ProductPage" component={ProductPage} />
+      <Stack.Screen name="Booking" component={Booking} />
+      <Stack.Screen name="Order" component={Order} />
+      <Stack.Screen name="ConfirmOrder" component={ConfirmOrder} />
+      <Stack.Screen name="TransportBooking" component={TransportBooking} />
+      <Stack.Screen name="CartingBooking" component={CartingBooking} />
     </Stack.Navigator>
   )
 }
