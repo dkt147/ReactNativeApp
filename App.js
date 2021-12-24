@@ -24,6 +24,8 @@ import Order from './lib/Component/Order';
 import ProductPage from './lib/packages/ProductPage/ProductPage';
 import Booking from './lib/packages/ProductPage/Booking';
 import CartingBooking from './lib/Component/CartingBooking';
+import TransportOrder from './lib/Component/TransportOrder';
+import TransportConfirmOrder from './lib/Component/TranportConformOrder';
 const MyStack = () => {
   const Stack = createNativeStackNavigator();
   return (
@@ -44,6 +46,8 @@ const MyStack = () => {
       <Stack.Screen name="ProductPage" component={ProductPage} />
       <Stack.Screen name="Booking" component={Booking} />
       <Stack.Screen name="Order" component={Order} />
+      <Stack.Screen name="TransportOrder" component={TransportOrder} />
+      <Stack.Screen name="TransportOrderConfrom" component={TransportConfirmOrder} />
       <Stack.Screen name="ConfirmOrder" component={ConfirmOrder} />
       <Stack.Screen name="TransportBooking" component={TransportBooking} />
       <Stack.Screen name="CartingBooking" component={CartingBooking} />
