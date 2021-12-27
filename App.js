@@ -26,6 +26,8 @@ import Booking from './lib/packages/ProductPage/Booking';
 import CartingBooking from './lib/Component/CartingBooking';
 import TransportOrder from './lib/Component/TransportOrder';
 import TransportConfirmOrder from './lib/Component/TranportConformOrder';
+import CatringOrder from './lib/Component/CatringOrder';
+import CatringConfirmOrder from './lib/Component/CatringOrderConform';
 const MyStack = () => {
   const Stack = createNativeStackNavigator();
   return (
@@ -47,7 +49,9 @@ const MyStack = () => {
       <Stack.Screen name="Booking" component={Booking} />
       <Stack.Screen name="Order" component={Order} />
       <Stack.Screen name="TransportOrder" component={TransportOrder} />
+      <Stack.Screen name="CatringOrder" component={CatringOrder} />
       <Stack.Screen name="TransportOrderConfrom" component={TransportConfirmOrder} />
+      <Stack.Screen name="CatringConfirmOrder" component={CatringConfirmOrder} />
       <Stack.Screen name="ConfirmOrder" component={ConfirmOrder} />
       <Stack.Screen name="TransportBooking" component={TransportBooking} />
       <Stack.Screen name="CartingBooking" component={CartingBooking} />
