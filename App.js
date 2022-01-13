@@ -15,6 +15,7 @@ import SignUp from './lib/packages/SignUp';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import UserInfo from './lib/Component/UserInfo'
 import farmOwnerInfo from './lib/Component/farmOwnerInfo'
+import FarmPackagesinfo from './lib/Component/FarmPackagesinfo'
 import CateringInfo from './lib/Component/CateringInfo'
 import TranspoterInfo from './lib/Component/TranspoterInfo'
 import AllPackages from './lib/Component/AllPackages';
@@ -28,6 +29,8 @@ import TransportOrder from './lib/Component/TransportOrder';
 import TransportConfirmOrder from './lib/Component/TranportConformOrder';
 import CatringOrder from './lib/Component/CatringOrder';
 import CatringConfirmOrder from './lib/Component/CatringOrderConform';
+import Search from './lib/Component/Search';
+import VentorReg from './lib/Component/VentorReg';
 const MyStack = () => {
   const Stack = createNativeStackNavigator();
   return (
@@ -55,6 +58,8 @@ const MyStack = () => {
       <Stack.Screen name="ConfirmOrder" component={ConfirmOrder} />
       <Stack.Screen name="TransportBooking" component={TransportBooking} />
       <Stack.Screen name="CartingBooking" component={CartingBooking} />
+      <Stack.Screen name="Search" component={Search} />
+      <Stack.Screen name="FarmPackageInfo" component={FarmPackagesinfo} />
     </Stack.Navigator>
   )
 }
@@ -71,6 +76,7 @@ const AuthStack = () => {
     >
       <Stack.Screen name="signin" component={SignIn} />
       <Stack.Screen name="signup" component={SignUp} />
+      <Stack.Screen name="VentorReg" component={VentorReg} />
     </Stack.Navigator>
   )
 }
