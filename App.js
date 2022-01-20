@@ -1,7 +1,8 @@
 import React from 'react';
 import {
   View,
-  ActivityIndicator
+  ActivityIndicator,
+  Image
 } from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
@@ -95,13 +96,9 @@ const App = () => {
 
   if (loading) {
     return (
-      <View style={{ backgroundColor: 'white', height: '100%', justifyContent: 'center' }} >
-        <View >
-          <MaterialCommunityIcons
-            name="alpha-m-circle"
-            size={220}
-            color="black"
-          />
+      <View style={{ backgroundColor: '#ededed', height: '100%', justifyContent: 'center'  }} >
+        <View style={{ alignSelf:'center',}}>
+          <Image source={require('./lib/Assets/farmLogo-removebg-preview.png')} alt={'logo'}/>
         </View>
         <ActivityIndicator animating={true} size="large" color="#25A9B6" />
       </View>
